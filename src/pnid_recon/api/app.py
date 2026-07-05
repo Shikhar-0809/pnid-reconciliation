@@ -12,6 +12,7 @@ from pydantic import BaseModel
 from pnid_recon.extraction.extract import extract_pid
 from pnid_recon.ingest.documents import load_datasheets, load_index_csv
 from pnid_recon.ingest.images import resolve_image_path
+from pnid_recon.llm.client import text_complete
 from pnid_recon.reconciliation.engine import reconcile
 from pnid_recon.reporting.report import report_to_json, report_to_markdown
 from pnid_recon.schemas.conflicts import ConflictReport
@@ -77,7 +78,12 @@ def reconcile_endpoint(body: ReconcileRequest) -> ConflictReport:
     """Reconcile an extraction result against index and datasheets."""
     index_rows = load_index_csv(body.index_path)
     datasheets = load_datasheets(body.datasheets_dir)
-    return reconcile(body.extraction, index_rows, datasheets)
+    return reconcile(
+        body.extraction,
+        index_rows,
+        datasheets,
+        text_complete_fn=text_complete,
+    )
 
 
 @app.post("/process", response_model=ProcessResponse)
@@ -88,7 +94,12 @@ def process_endpoint(body: ProcessRequest) -> ProcessResponse:
     datasheets = load_datasheets(body.datasheets_dir)
 
     extraction = extract_pid(image_path)
-    report = reconcile(extraction, index_rows, datasheets)
+    report = reconcile(
+        extraction,
+        index_rows,
+        datasheets,
+        text_complete_fn=text_complete,
+    )
     run_id = save_run(extraction, report)
 
     return ProcessResponse(

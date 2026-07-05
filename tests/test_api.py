@@ -40,7 +40,10 @@ def test_process_t0_scenario_returns_full_report(api_client: TestClient) -> None
 
     extraction, _, _, expected_types = build_full_conflict_fixture()
 
-    with patch("pnid_recon.api.app.extract_pid", return_value=extraction):
+    with (
+        patch("pnid_recon.api.app.extract_pid", return_value=extraction),
+        patch("pnid_recon.api.app.text_complete", return_value="[]"),
+    ):
         response = api_client.post("/process", json=_scenario_paths())
 
     assert response.status_code == 200
@@ -62,7 +65,10 @@ def test_get_run_returns_stored_report(api_client: TestClient) -> None:
 
     extraction, _, _, _ = build_full_conflict_fixture()
 
-    with patch("pnid_recon.api.app.extract_pid", return_value=extraction):
+    with (
+        patch("pnid_recon.api.app.extract_pid", return_value=extraction),
+        patch("pnid_recon.api.app.text_complete", return_value="[]"),
+    ):
         process_response = api_client.post("/process", json=_scenario_paths())
         run_id = process_response.json()["run_id"]
         run_response = api_client.get(f"/runs/{run_id}")
@@ -84,6 +90,7 @@ def test_reconcile_endpoint_returns_conflicts(api_client: TestClient) -> None:
     with (
         patch("pnid_recon.api.app.load_index_csv", return_value=index_rows),
         patch("pnid_recon.api.app.load_datasheets", return_value=datasheets),
+        patch("pnid_recon.api.app.text_complete", return_value="[]"),
     ):
         response = api_client.post(
             "/reconcile",

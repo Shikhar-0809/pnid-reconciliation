@@ -74,7 +74,7 @@ Generated from `python -m eval.run_eval` on T0 (`scenario_001`, 5 instruments) a
 
 Full tables: `eval/output/metrics.json` and `eval/output/metrics.md`.
 
-Beyond the synthetic eval, the extraction half was exercised on a batch of real P&ID images — public-domain and textbook examples — via `POST /extract` in extraction-only mode (no instrument index or datasheets were available for matching). On clean CAD-exported P&IDs, the VLM typically returned on the order of 10–20 instruments per drawing. Images that are not P&IDs — motor nameplates, mechanical drawings, electrical schematics — generally returned zero instruments once the extraction prompt precondition was in place.
+Beyond the synthetic eval, the extraction half was exercised on a batch of real P&ID images — public-domain and textbook examples — via `POST /extract` in extraction-only mode (no instrument index or datasheets were available for matching). On clean CAD-exported P&IDs, the VLM typically returned on the order of 10–20 instruments per drawing. Images that are not P&IDs — motor nameplates, mechanical drawings, electrical schematics — returned zero instruments on most non-P&ID inputs; some complex drawings with numbered components produced false positives depending on the provider.
 
 ## Run instructions
 
