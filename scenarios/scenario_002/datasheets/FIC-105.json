@@ -1,0 +1,9 @@
+{
+  "tag": "FIC-105",
+  "manufacturer": "Honeywell",
+  "model": "UDC2500",
+  "properties": {
+    "design_pressure": "25 bar",
+    "range": "0-80 m3/h"
+  }
+}

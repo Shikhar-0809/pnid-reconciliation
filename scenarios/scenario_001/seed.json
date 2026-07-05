@@ -1,0 +1,13 @@
+{
+  "seed": 42,
+  "tier": "T0",
+  "instrument_count": 5,
+  "injector_ids": [
+    "duplicate_tag",
+    "missing_in_index",
+    "missing_in_pid",
+    "missing_datasheet",
+    "value_mismatch",
+    "type_mismatch"
+  ]
+}

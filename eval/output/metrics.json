@@ -1,0 +1,218 @@
+{
+  "scenarios": [
+    {
+      "scenario_id": "scenario_001",
+      "tier": "T0",
+      "extraction": {
+        "tp": 5,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "tag_parse": {
+        "tp": 5,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "confidence_calibration": {
+        "flagged_incorrect": 0,
+        "flagged_correct": 0,
+        "unflagged_incorrect": 0,
+        "unflagged_correct": 5,
+        "review_precision": null,
+        "review_recall": null
+      },
+      "conflicts": {
+        "MISSING_IN_INDEX": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "MISSING_IN_PID": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "MISSING_DATASHEET": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "VALUE_MISMATCH": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "TYPE_MISMATCH": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "DUPLICATE_TAG": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        }
+      },
+      "false_positive_conflicts": 0
+    },
+    {
+      "scenario_id": "scenario_002",
+      "tier": "T1",
+      "extraction": {
+        "tp": 9,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "tag_parse": {
+        "tp": 9,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "confidence_calibration": {
+        "flagged_incorrect": 0,
+        "flagged_correct": 0,
+        "unflagged_incorrect": 0,
+        "unflagged_correct": 9,
+        "review_precision": null,
+        "review_recall": null
+      },
+      "conflicts": {
+        "MISSING_IN_INDEX": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "MISSING_IN_PID": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "MISSING_DATASHEET": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "VALUE_MISMATCH": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "TYPE_MISMATCH": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "DUPLICATE_TAG": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0
+        }
+      },
+      "false_positive_conflicts": 0
+    }
+  ],
+  "aggregate": {
+    "scenario_id": "aggregate",
+    "tier": "all",
+    "extraction": {
+      "tp": 14,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "tag_parse": {
+      "tp": 14,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "confidence_calibration": {
+      "flagged_incorrect": 0,
+      "flagged_correct": 0,
+      "unflagged_incorrect": 0,
+      "unflagged_correct": 14,
+      "review_precision": null,
+      "review_recall": null
+    },
+    "conflicts": {
+      "DUPLICATE_TAG": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "MISSING_DATASHEET": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "MISSING_IN_INDEX": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "MISSING_IN_PID": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "TYPE_MISMATCH": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "VALUE_MISMATCH": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0
+      }
+    },
+    "false_positive_conflicts": 0
+  },
+  "generated_at": "2026-07-05T07:34:29.622334+00:00"
+}

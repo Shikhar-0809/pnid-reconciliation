@@ -1,0 +1,9 @@
+{
+  "tag": "FCV-112",
+  "manufacturer": "Fisher",
+  "model": "657",
+  "properties": {
+    "design_pressure": "25 bar",
+    "range": "0-100 pct"
+  }
+}

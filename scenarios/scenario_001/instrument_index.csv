@@ -1,0 +1,7 @@
+tag,instrument_type,service,pid_ref,design_pressure,range
+PT-101,Pressure Transmitter,Reactor pressure,DWG-001,50 bar,0-100 bar
+TT-102,Temperature Transmitter,Reactor temperature,DWG-001,,0-200 C
+FIC-105,Flow Indicating Controller,Product flow control,DWG-001,,0-80 m3/h
+FCV-112,Temperature Indicator,Product flow control,DWG-001,,0-100 pct
+TT-102,Temperature Transmitter,Reactor temperature (duplicate row),DWG-001,,0-200 C
+FT-999,Flow Transmitter,Cooling water return,DWG-001,6 bar,

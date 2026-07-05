@@ -1,0 +1,8 @@
+{
+  "source_image": "E:\\Pathnovo\\real_images\\T19.jpg",
+  "instruments": [],
+  "model_name": "gemini-2.5-flash",
+  "warnings": [
+    "No ISA 5.1 instrument symbols detected"
+  ]
+}

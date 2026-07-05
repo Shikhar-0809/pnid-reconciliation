@@ -1,0 +1,307 @@
+{
+  "source_image": "E:\\Pathnovo\\real_images\\T23.png",
+  "instruments": [
+    {
+      "tag": "TI",
+      "parsed_tag": {
+        "raw": "TI",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Temperature Indicator",
+      "properties": {},
+      "bbox": null,
+      "confidence": 1.0,
+      "needs_review": false
+    },
+    {
+      "tag": "TT",
+      "parsed_tag": {
+        "raw": "TT",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Temperature Transmitter",
+      "properties": {},
+      "bbox": null,
+      "confidence": 1.0,
+      "needs_review": false
+    },
+    {
+      "tag": "TIC",
+      "parsed_tag": {
+        "raw": "TIC",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Temperature Indicating Controller",
+      "properties": {},
+      "bbox": null,
+      "confidence": 1.0,
+      "needs_review": false
+    },
+    {
+      "tag": "TT",
+      "parsed_tag": {
+        "raw": "TT",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Temperature Transmitter",
+      "properties": {},
+      "bbox": null,
+      "confidence": 1.0,
+      "needs_review": false
+    },
+    {
+      "tag": "TT",
+      "parsed_tag": {
+        "raw": "TT",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Temperature Transmitter",
+      "properties": {},
+      "bbox": null,
+      "confidence": 1.0,
+      "needs_review": false
+    },
+    {
+      "tag": "TI",
+      "parsed_tag": {
+        "raw": "TI",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Temperature Indicator",
+      "properties": {},
+      "bbox": null,
+      "confidence": 1.0,
+      "needs_review": false
+    },
+    {
+      "tag": "PSL",
+      "parsed_tag": {
+        "raw": "PSL",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Pressure Switch Low",
+      "properties": {},
+      "bbox": null,
+      "confidence": 1.0,
+      "needs_review": false
+    },
+    {
+      "tag": "PSH",
+      "parsed_tag": {
+        "raw": "PSH",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Pressure Switch High",
+      "properties": {},
+      "bbox": null,
+      "confidence": 1.0,
+      "needs_review": false
+    },
+    {
+      "tag": "PI",
+      "parsed_tag": {
+        "raw": "PI",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Pressure Indicator",
+      "properties": {},
+      "bbox": null,
+      "confidence": 1.0,
+      "needs_review": false
+    },
+    {
+      "tag": "AT",
+      "parsed_tag": {
+        "raw": "AT",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Analyzer Transmitter",
+      "properties": {},
+      "bbox": null,
+      "confidence": 1.0,
+      "needs_review": false
+    },
+    {
+      "tag": "FC",
+      "parsed_tag": {
+        "raw": "FC",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Flow Controller",
+      "properties": {},
+      "bbox": null,
+      "confidence": 1.0,
+      "needs_review": false
+    },
+    {
+      "tag": "PI",
+      "parsed_tag": {
+        "raw": "PI",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Pressure Indicator",
+      "properties": {},
+      "bbox": null,
+      "confidence": 1.0,
+      "needs_review": false
+    },
+    {
+      "tag": "PCV",
+      "parsed_tag": {
+        "raw": "PCV",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Pressure Control Valve",
+      "properties": {},
+      "bbox": null,
+      "confidence": 1.0,
+      "needs_review": false
+    },
+    {
+      "tag": "XV",
+      "parsed_tag": {
+        "raw": "XV",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Valve (On-Off)",
+      "properties": {},
+      "bbox": null,
+      "confidence": 1.0,
+      "needs_review": false
+    },
+    {
+      "tag": "XV",
+      "parsed_tag": {
+        "raw": "XV",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Valve (On-Off)",
+      "properties": {},
+      "bbox": null,
+      "confidence": 1.0,
+      "needs_review": false
+    },
+    {
+      "tag": "PCV",
+      "parsed_tag": {
+        "raw": "PCV",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Pressure Control Valve",
+      "properties": {},
+      "bbox": null,
+      "confidence": 1.0,
+      "needs_review": false
+    },
+    {
+      "tag": "PI",
+      "parsed_tag": {
+        "raw": "PI",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Pressure Indicator",
+      "properties": {},
+      "bbox": null,
+      "confidence": 1.0,
+      "needs_review": false
+    },
+    {
+      "tag": "XV",
+      "parsed_tag": {
+        "raw": "XV",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Valve (On-Off)",
+      "properties": {},
+      "bbox": null,
+      "confidence": 1.0,
+      "needs_review": false
+    },
+    {
+      "tag": "XV",
+      "parsed_tag": {
+        "raw": "XV",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Valve (On-Off)",
+      "properties": {},
+      "bbox": null,
+      "confidence": 1.0,
+      "needs_review": false
+    },
+    {
+      "tag": "PCV",
+      "parsed_tag": {
+        "raw": "PCV",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Pressure Control Valve",
+      "properties": {},
+      "bbox": null,
+      "confidence": 1.0,
+      "needs_review": false
+    }
+  ],
+  "model_name": "gemini-2.5-flash",
+  "warnings": []
+}

@@ -1,0 +1,142 @@
+{
+  "source_image": "E:\\Pathnovo\\real_images\\T25.png",
+  "instruments": [
+    {
+      "tag": "PT",
+      "parsed_tag": {
+        "raw": "PT",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Pressure Transmitter",
+      "properties": {},
+      "bbox": null,
+      "confidence": 0.8,
+      "needs_review": false
+    },
+    {
+      "tag": "FT",
+      "parsed_tag": {
+        "raw": "FT",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Flow Transmitter",
+      "properties": {},
+      "bbox": null,
+      "confidence": 0.8,
+      "needs_review": false
+    },
+    {
+      "tag": "AI",
+      "parsed_tag": {
+        "raw": "AI",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Analog Input",
+      "properties": {},
+      "bbox": null,
+      "confidence": 0.8,
+      "needs_review": false
+    },
+    {
+      "tag": "AT",
+      "parsed_tag": {
+        "raw": "AT",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Temperature Transmitter",
+      "properties": {},
+      "bbox": null,
+      "confidence": 0.8,
+      "needs_review": false
+    },
+    {
+      "tag": "AE",
+      "parsed_tag": {
+        "raw": "AE",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Analyzer Element",
+      "properties": {},
+      "bbox": null,
+      "confidence": 0.8,
+      "needs_review": false
+    },
+    {
+      "tag": "FE",
+      "parsed_tag": {
+        "raw": "FE",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Flow Element",
+      "properties": {},
+      "bbox": null,
+      "confidence": 0.8,
+      "needs_review": false
+    },
+    {
+      "tag": "QIC",
+      "parsed_tag": {
+        "raw": "QIC",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Quadrant Isolator Control",
+      "properties": {},
+      "bbox": null,
+      "confidence": 0.8,
+      "needs_review": false
+    },
+    {
+      "tag": "RIC",
+      "parsed_tag": {
+        "raw": "RIC",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Ratio Isolator Control",
+      "properties": {},
+      "bbox": null,
+      "confidence": 0.8,
+      "needs_review": false
+    },
+    {
+      "tag": "LIC",
+      "parsed_tag": {
+        "raw": "LIC",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Level Controller",
+      "properties": {},
+      "bbox": null,
+      "confidence": 0.8,
+      "needs_review": false
+    }
+  ],
+  "model_name": "qwen2.5vl:7b",
+  "warnings": []
+}

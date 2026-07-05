@@ -1,0 +1,127 @@
+{
+  "source_image": "E:\\Pathnovo\\real_images\\T26.png",
+  "instruments": [
+    {
+      "tag": "I/P",
+      "parsed_tag": {
+        "raw": "I/P",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Input/Process",
+      "properties": {},
+      "bbox": null,
+      "confidence": 0.9,
+      "needs_review": false
+    },
+    {
+      "tag": "FC",
+      "parsed_tag": {
+        "raw": "FC",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Flow Controller",
+      "properties": {},
+      "bbox": null,
+      "confidence": 0.9,
+      "needs_review": false
+    },
+    {
+      "tag": "FT",
+      "parsed_tag": {
+        "raw": "FT",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Level Transmitter",
+      "properties": {},
+      "bbox": null,
+      "confidence": 0.9,
+      "needs_review": false
+    },
+    {
+      "tag": "TE",
+      "parsed_tag": {
+        "raw": "TE",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Temperature Transmitter",
+      "properties": {},
+      "bbox": null,
+      "confidence": 0.9,
+      "needs_review": false
+    },
+    {
+      "tag": "I/P",
+      "parsed_tag": {
+        "raw": "I/P",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Input/Process",
+      "properties": {},
+      "bbox": null,
+      "confidence": 0.9,
+      "needs_review": false
+    },
+    {
+      "tag": "FC-29",
+      "parsed_tag": {
+        "raw": "FC-29",
+        "measured_variable": "Flow",
+        "function": "Controller",
+        "loop_number": "29",
+        "parse_ok": true
+      },
+      "instrument_type": "Flow Controller",
+      "properties": {},
+      "bbox": null,
+      "confidence": 0.9,
+      "needs_review": false
+    },
+    {
+      "tag": "FT-30",
+      "parsed_tag": {
+        "raw": "FT-30",
+        "measured_variable": "Flow",
+        "function": "Transmitter",
+        "loop_number": "30",
+        "parse_ok": true
+      },
+      "instrument_type": "Level Transmitter",
+      "properties": {},
+      "bbox": null,
+      "confidence": 0.9,
+      "needs_review": false
+    },
+    {
+      "tag": "TE-28",
+      "parsed_tag": {
+        "raw": "TE-28",
+        "measured_variable": "Temperature",
+        "function": "Element",
+        "loop_number": "28",
+        "parse_ok": true
+      },
+      "instrument_type": "Temperature Transmitter",
+      "properties": {},
+      "bbox": null,
+      "confidence": 0.9,
+      "needs_review": false
+    }
+  ],
+  "model_name": "qwen2.5vl:7b",
+  "warnings": []
+}

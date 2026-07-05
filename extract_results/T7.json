@@ -1,0 +1,232 @@
+{
+  "source_image": "E:\\Pathnovo\\real_images\\T7.jpg",
+  "instruments": [
+    {
+      "tag": "PT",
+      "parsed_tag": {
+        "raw": "PT",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Pressure Transmitter",
+      "properties": {},
+      "bbox": null,
+      "confidence": 0.9,
+      "needs_review": false
+    },
+    {
+      "tag": "TT",
+      "parsed_tag": {
+        "raw": "TT",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Temperature Transmitter",
+      "properties": {},
+      "bbox": null,
+      "confidence": 0.9,
+      "needs_review": false
+    },
+    {
+      "tag": "FT",
+      "parsed_tag": {
+        "raw": "FT",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Flow Transmitter",
+      "properties": {},
+      "bbox": null,
+      "confidence": 0.9,
+      "needs_review": false
+    },
+    {
+      "tag": "FC",
+      "parsed_tag": {
+        "raw": "FC",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Flow Controller",
+      "properties": {},
+      "bbox": null,
+      "confidence": 0.9,
+      "needs_review": false
+    },
+    {
+      "tag": "TE",
+      "parsed_tag": {
+        "raw": "TE",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Temperature Controller",
+      "properties": {},
+      "bbox": null,
+      "confidence": 0.9,
+      "needs_review": false
+    },
+    {
+      "tag": "LT",
+      "parsed_tag": {
+        "raw": "LT",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Level Transmitter",
+      "properties": {},
+      "bbox": null,
+      "confidence": 0.9,
+      "needs_review": false
+    },
+    {
+      "tag": "AT",
+      "parsed_tag": {
+        "raw": "AT",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Analyzer Transmitter",
+      "properties": {},
+      "bbox": null,
+      "confidence": 0.9,
+      "needs_review": false
+    },
+    {
+      "tag": "FIC",
+      "parsed_tag": {
+        "raw": "FIC",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Flow Indicator Controller",
+      "properties": {},
+      "bbox": null,
+      "confidence": 0.9,
+      "needs_review": false
+    },
+    {
+      "tag": "LCV",
+      "parsed_tag": {
+        "raw": "LCV",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Liquid Control Valve",
+      "properties": {},
+      "bbox": null,
+      "confidence": 0.9,
+      "needs_review": false
+    },
+    {
+      "tag": "FCV",
+      "parsed_tag": {
+        "raw": "FCV",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Fluid Control Valve",
+      "properties": {},
+      "bbox": null,
+      "confidence": 0.9,
+      "needs_review": false
+    },
+    {
+      "tag": "PIC",
+      "parsed_tag": {
+        "raw": "PIC",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Pressure Indicator Controller",
+      "properties": {},
+      "bbox": null,
+      "confidence": 0.9,
+      "needs_review": false
+    },
+    {
+      "tag": "LIC",
+      "parsed_tag": {
+        "raw": "LIC",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Level Indicator Controller",
+      "properties": {},
+      "bbox": null,
+      "confidence": 0.9,
+      "needs_review": false
+    },
+    {
+      "tag": "TIC",
+      "parsed_tag": {
+        "raw": "TIC",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Temperature Indicator Controller",
+      "properties": {},
+      "bbox": null,
+      "confidence": 0.9,
+      "needs_review": false
+    },
+    {
+      "tag": "I/P",
+      "parsed_tag": {
+        "raw": "I/P",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Input/Output Converter",
+      "properties": {},
+      "bbox": null,
+      "confidence": 0.9,
+      "needs_review": false
+    },
+    {
+      "tag": "S",
+      "parsed_tag": {
+        "raw": "S",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Sensor",
+      "properties": {},
+      "bbox": null,
+      "confidence": 0.9,
+      "needs_review": false
+    }
+  ],
+  "model_name": "qwen2.5vl:7b",
+  "warnings": []
+}

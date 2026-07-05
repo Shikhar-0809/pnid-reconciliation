@@ -1,0 +1,9 @@
+{
+  "tag": "TT-107",
+  "manufacturer": "Yokogawa",
+  "model": "YTA110",
+  "properties": {
+    "design_pressure": "10 bar",
+    "range": "0-150 C"
+  }
+}

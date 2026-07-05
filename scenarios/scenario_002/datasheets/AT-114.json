@@ -1,0 +1,9 @@
+{
+  "tag": "AT-114",
+  "manufacturer": "ABB",
+  "model": "AO2000",
+  "properties": {
+    "design_pressure": "6 bar",
+    "range": "0-100 pct"
+  }
+}

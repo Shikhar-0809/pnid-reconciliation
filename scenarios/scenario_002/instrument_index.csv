@@ -1,0 +1,11 @@
+tag,instrument_type,service,pid_ref,design_pressure,range
+PT-101,Pressure Transmitter,Reactor pressure,DWG-001,50 bar,0-100 bar
+TT-102,Temperature Transmitter,Reactor temperature,DWG-001,,0-200 C
+FT-103,Flow Transmitter,Feed flow,DWG-001,,0-50 m3/h
+FIC-105,Temperature Indicator,Product flow control,DWG-001,,0-80 m3/h
+LCV-106,Level Control Valve,Bottom outlet level control,DWG-001,,0-100 pct
+TT-107,Temperature Transmitter,Outlet temperature,DWG-001,,0-150 C
+PT-108,Pressure Transmitter,Column overhead pressure,DWG-001,,0-25 bar
+AT-114,Analyzer Transmitter,Product composition,DWG-001,,0-100 pct
+TT-102,Temperature Transmitter,Reactor temperature (duplicate row),DWG-001,,0-200 C
+FT-999,Flow Transmitter,Cooling water return,DWG-001,6 bar,

@@ -1,0 +1,9 @@
+{
+  "tag": "FT-103",
+  "manufacturer": "Endress+Hauser",
+  "model": "Promag 50",
+  "properties": {
+    "design_pressure": "16 bar",
+    "range": "0-50 m3/h"
+  }
+}

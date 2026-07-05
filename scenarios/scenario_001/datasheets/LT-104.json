@@ -1,0 +1,9 @@
+{
+  "tag": "LT-104",
+  "manufacturer": "Vega",
+  "model": "VEGAPULS 64",
+  "properties": {
+    "design_pressure": "50 bar",
+    "range": "0-3000 mm"
+  }
+}

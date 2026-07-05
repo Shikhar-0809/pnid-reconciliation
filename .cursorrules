@@ -1,0 +1,44 @@
+# .cursorrules — P&ID Extraction + Cross-Document Reconciliation
+
+You are building this project strictly against the doc suite in `docs/`. Those docs are the
+source of truth. This file lists the invariants that must hold on EVERY request; the docs hold
+the detail.
+
+## Before writing any code
+1. Re-read the `.md` files attached to the current prompt, plus `docs/08_ANTI_DRIFT.md`.
+2. Confirm the task is in scope (ANTI_DRIFT §2 scope guards). If it's blocked there, STOP and say so.
+3. If the task requires changing a locked decision (ANTI_DRIFT §1), STOP. Do not implement.
+   Flag it and ask to run the drift process (update the relevant `.md` first, then code).
+
+## Hard invariants (never violate silently)
+- Modules exchange ONLY Pydantic models from `src/pnid_recon/schemas/`. Never loose dicts across boundaries.
+- ALL model calls go through `src/pnid_recon/llm/client.py`. No module imports a provider SDK directly.
+- Extraction uses `instructor` + Pydantic to return `ExtractionResult`. Never hand-parse free text.
+- Temperature = 0 for extraction and fuzzy matching (determinism).
+- Every `Conflict` carries provenance: the source documents and the fields/values that disagree.
+- Deterministic matching runs BEFORE any LLM fuzzy match; the LLM only sees leftover unmatched items.
+- Conflict rules are declarative data in the `RULES` registry, not scattered `if` statements.
+- Dependencies are frozen to `docs/02_TECH_STACK.md`. Do not add a library without approval.
+- Free-tier services only. No paid provider introduced without approval.
+- API routes contain NO business logic — they delegate to modules.
+
+## Scope guards (do NOT build in MVP)
+Topology/graph extraction · custom-trained detectors · multi-sheet drawings · CFIHOS/ISO 15926 export
+· web UI · auth/queues/Docker · LoRA fine-tuning. If a request or your own suggestion drifts toward
+these, flag it as out of scope.
+
+## Discipline
+- Do not add features, endpoints, dependencies, or refactors I did not ask for.
+- No "while I was here I also…" changes. One task per prompt.
+- Type hints on every signature. Follow `docs/06_CODING_PRACTICES.md`.
+- Never hardcode or commit secrets. Keys live in `.env` (git-ignored).
+- Report metrics exactly as measured — no rounding up, no cherry-picking one scenario.
+
+## After coding
+Self-check against ANTI_DRIFT §3 drift signs: loose dicts across boundaries, model calls bypassing
+`llm/client.py`, deps not in TECH_STACK, conflicts missing provenance, out-of-scope work, unrequested
+refactors. If you find one, fix it before declaring the task done.
+
+## Definition of done
+Feature has tests; integration tests pass with a MOCKED VLM; no ARCHITECTURE invariant violated;
+eval numbers (if touched) did not regress. See `docs/10_BUILD_SEQUENCE.md` for the phase gate.

@@ -1,0 +1,180 @@
+{
+  "scenario_id": "scenario_001",
+  "tier": "T0",
+  "seed": 42,
+  "instruments": [
+    {
+      "tag": "PT-101",
+      "instrument_type": "Pressure Transmitter",
+      "service": "Reactor pressure",
+      "manufacturer": "Rosemount",
+      "model": "3051CD",
+      "design_pressure": "50 bar",
+      "range": "0-100 bar",
+      "bbox": {
+        "x": 0.04428571428571428,
+        "y": 0.6244444444444445,
+        "width": 0.08285714285714285,
+        "height": 0.1622222222222222
+      },
+      "show_pressure_on_drawing": true
+    },
+    {
+      "tag": "TT-102",
+      "instrument_type": "Temperature Transmitter",
+      "service": "Reactor temperature",
+      "manufacturer": "Yokogawa",
+      "model": "YTA110",
+      "design_pressure": "10 bar",
+      "range": "0-200 C",
+      "bbox": {
+        "x": 0.25142857142857145,
+        "y": 0.6244444444444445,
+        "width": 0.08285714285714285,
+        "height": 0.1288888888888889
+      },
+      "show_pressure_on_drawing": false
+    },
+    {
+      "tag": "LT-104",
+      "instrument_type": "Level Transmitter",
+      "service": "Reactor level",
+      "manufacturer": "Vega",
+      "model": "VEGAPULS 64",
+      "design_pressure": "50 bar",
+      "range": "0-3000 mm",
+      "bbox": {
+        "x": 0.4585714285714286,
+        "y": 0.6244444444444445,
+        "width": 0.08285714285714285,
+        "height": 0.1288888888888889
+      },
+      "show_pressure_on_drawing": false
+    },
+    {
+      "tag": "FIC-105",
+      "instrument_type": "Flow Indicating Controller",
+      "service": "Product flow control",
+      "manufacturer": "Honeywell",
+      "model": "UDC2500",
+      "design_pressure": "25 bar",
+      "range": "0-80 m3/h",
+      "bbox": {
+        "x": 0.6657142857142857,
+        "y": 0.6244444444444445,
+        "width": 0.08285714285714285,
+        "height": 0.1288888888888889
+      },
+      "show_pressure_on_drawing": false
+    },
+    {
+      "tag": "FCV-112",
+      "instrument_type": "Flow Control Valve",
+      "service": "Product flow control",
+      "manufacturer": "Fisher",
+      "model": "657",
+      "design_pressure": "25 bar",
+      "range": "0-100 pct",
+      "bbox": {
+        "x": 0.8728571428571429,
+        "y": 0.6244444444444445,
+        "width": 0.08285714285714285,
+        "height": 0.1288888888888889
+      },
+      "show_pressure_on_drawing": false
+    }
+  ],
+  "seeded_conflicts": [
+    {
+      "conflict_type": "DUPLICATE_TAG",
+      "severity": "LOW",
+      "tag": "TT-102",
+      "field": null,
+      "sources": [
+        "index"
+      ],
+      "values": {
+        "index": "TT-102"
+      },
+      "message": "Tag TT-102 appears more than once in the instrument index.",
+      "injector_id": "duplicate_tag"
+    },
+    {
+      "conflict_type": "MISSING_IN_INDEX",
+      "severity": "MEDIUM",
+      "tag": "LT-104",
+      "field": null,
+      "sources": [
+        "pid",
+        "index"
+      ],
+      "values": {
+        "pid": "LT-104"
+      },
+      "message": "Instrument LT-104 is on the P&ID but missing from the index.",
+      "injector_id": "missing_in_index"
+    },
+    {
+      "conflict_type": "MISSING_IN_PID",
+      "severity": "MEDIUM",
+      "tag": "FT-999",
+      "field": null,
+      "sources": [
+        "index",
+        "pid"
+      ],
+      "values": {
+        "index": "FT-999"
+      },
+      "message": "Instrument FT-999 is in the index but not on the P&ID.",
+      "injector_id": "missing_in_pid"
+    },
+    {
+      "conflict_type": "MISSING_DATASHEET",
+      "severity": "MEDIUM",
+      "tag": "TT-102",
+      "field": null,
+      "sources": [
+        "index",
+        "datasheet"
+      ],
+      "values": {
+        "index": "TT-102"
+      },
+      "message": "No datasheet found for instrument TT-102.",
+      "injector_id": "missing_datasheet"
+    },
+    {
+      "conflict_type": "VALUE_MISMATCH",
+      "severity": "HIGH",
+      "tag": "PT-101",
+      "field": "design_pressure",
+      "sources": [
+        "pid",
+        "datasheet"
+      ],
+      "values": {
+        "pid": "50 bar",
+        "datasheet": "40 bar"
+      },
+      "message": "Design pressure for PT-101 differs between P&ID (50 bar) and datasheet (40 bar).",
+      "injector_id": "value_mismatch"
+    },
+    {
+      "conflict_type": "TYPE_MISMATCH",
+      "severity": "MEDIUM",
+      "tag": "FCV-112",
+      "field": "instrument_type",
+      "sources": [
+        "pid",
+        "index"
+      ],
+      "values": {
+        "pid": "Flow Control Valve",
+        "index": "Temperature Indicator"
+      },
+      "message": "Instrument type for FCV-112 differs between P&ID (Flow Control Valve) and index (Temperature Indicator).",
+      "injector_id": "type_mismatch"
+    }
+  ]
+}

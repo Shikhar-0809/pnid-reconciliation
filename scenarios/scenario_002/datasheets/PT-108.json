@@ -1,0 +1,9 @@
+{
+  "tag": "PT-108",
+  "manufacturer": "Rosemount",
+  "model": "3051CD",
+  "properties": {
+    "design_pressure": "16 bar",
+    "range": "0-25 bar"
+  }
+}

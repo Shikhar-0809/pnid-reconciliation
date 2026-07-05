@@ -1,0 +1,39 @@
+{
+  "source_image": "E:\\Pathnovo\\real_images\\T27.png",
+  "instruments": [
+    {
+      "tag": "S",
+      "parsed_tag": {
+        "raw": "S",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Sensor",
+      "properties": {},
+      "bbox": null,
+      "confidence": 0.9,
+      "needs_review": false
+    },
+    {
+      "tag": "LC",
+      "parsed_tag": {
+        "raw": "LC",
+        "measured_variable": null,
+        "function": null,
+        "loop_number": null,
+        "parse_ok": false
+      },
+      "instrument_type": "Level Controller",
+      "properties": {},
+      "bbox": null,
+      "confidence": 0.85,
+      "needs_review": false
+    }
+  ],
+  "model_name": "qwen2.5vl:7b",
+  "warnings": [
+    "No ISA 5.1 instrument symbols detected"
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "scenario_id": "scenario_002",
+  "tier": "T1",
+  "seed": 100,
+  "instruments": [
+    {
+      "tag": "PT-101",
+      "instrument_type": "Pressure Transmitter",
+      "service": "Reactor pressure",
+      "manufacturer": "Rosemount",
+      "model": "3051CD",
+      "design_pressure": "50 bar",
+      "range": "0-100 bar",
+      "bbox": {
+        "x": 0.027142857142857142,
+        "y": 0.5755555555555556,
+        "width": 0.06,
+        "height": 0.11777777777777777
+      },
+      "show_pressure_on_drawing": true
+    },
+    {
+      "tag": "TT-102",
+      "instrument_type": "Temperature Transmitter",
+      "service": "Reactor temperature",
+      "manufacturer": "Yokogawa",
+      "model": "YTA110",
+      "design_pressure": "10 bar",
+      "range": "0-200 C",
+      "bbox": {
+        "x": 0.24857142857142858,
+        "y": 0.5755555555555556,
+        "width": 0.06,
+        "height": 0.09333333333333334
+      },
+      "show_pressure_on_drawing": false
+    },
+    {
+      "tag": "FT-103",
+      "instrument_type": "Flow Transmitter",
+      "service": "Feed flow",
+      "manufacturer": "Endress+Hauser",
+      "model": "Promag 50",
+      "design_pressure": "16 bar",
+      "range": "0-50 m3/h",
+      "bbox": {
+        "x": 0.47,
+        "y": 0.5755555555555556,
+        "width": 0.06,
+        "height": 0.09333333333333334
+      },
+      "show_pressure_on_drawing": false
+    },
+    {
+      "tag": "FIC-105",
+      "instrument_type": "Flow Indicating Controller",
+      "service": "Product flow control",
+      "manufacturer": "Honeywell",
+      "model": "UDC2500",
+      "design_pressure": "25 bar",
+      "range": "0-80 m3/h",
+      "bbox": {
+        "x": 0.6914285714285714,
+        "y": 0.5755555555555556,
+        "width": 0.06,
+        "height": 0.09333333333333334
+      },
+      "show_pressure_on_drawing": false
+    },
+    {
+      "tag": "LCV-106",
+      "instrument_type": "Level Control Valve",
+      "service": "Bottom outlet level control",
+      "manufacturer": "Fisher",
+      "model": "EZ",
+      "design_pressure": "50 bar",
+      "range": "0-100 pct",
+      "bbox": {
+        "x": 0.9128571428571428,
+        "y": 0.5755555555555556,
+        "width": 0.06,
+        "height": 0.09333333333333334
+      },
+      "show_pressure_on_drawing": false
+    },
+    {
+      "tag": "TT-107",
+      "instrument_type": "Temperature Transmitter",
+      "service": "Outlet temperature",
+      "manufacturer": "Yokogawa",
+      "model": "YTA110",
+      "design_pressure": "10 bar",
+      "range": "0-150 C",
+      "bbox": {
+        "x": 0.027142857142857142,
+        "y": 0.7533333333333333,
+        "width": 0.06,
+        "height": 0.09333333333333334
+      },
+      "show_pressure_on_drawing": false
+    },
+    {
+      "tag": "PT-108",
+      "instrument_type": "Pressure Transmitter",
+      "service": "Column overhead pressure",
+      "manufacturer": "Rosemount",
+      "model": "3051CD",
+      "design_pressure": "16 bar",
+      "range": "0-25 bar",
+      "bbox": {
+        "x": 0.3223809523809524,
+        "y": 0.7533333333333333,
+        "width": 0.06,
+        "height": 0.09333333333333334
+      },
+      "show_pressure_on_drawing": false
+    },
+    {
+      "tag": "TIC-111",
+      "instrument_type": "Temperature Indicating Controller",
+      "service": "Reactor temperature control",
+      "manufacturer": "Honeywell",
+      "model": "UDC2500",
+      "design_pressure": "10 bar",
+      "range": "0-200 C",
+      "bbox": {
+        "x": 0.6176190476190476,
+        "y": 0.7533333333333333,
+        "width": 0.06,
+        "height": 0.09333333333333334
+      },
+      "show_pressure_on_drawing": false
+    },
+    {
+      "tag": "AT-114",
+      "instrument_type": "Analyzer Transmitter",
+      "service": "Product composition",
+      "manufacturer": "ABB",
+      "model": "AO2000",
+      "design_pressure": "6 bar",
+      "range": "0-100 pct",
+      "bbox": {
+        "x": 0.9128571428571428,
+        "y": 0.7533333333333333,
+        "width": 0.06,
+        "height": 0.09333333333333334
+      },
+      "show_pressure_on_drawing": false
+    }
+  ],
+  "seeded_conflicts": [
+    {
+      "conflict_type": "DUPLICATE_TAG",
+      "severity": "LOW",
+      "tag": "TT-102",
+      "field": null,
+      "sources": [
+        "index"
+      ],
+      "values": {
+        "index": "TT-102"
+      },
+      "message": "Tag TT-102 appears more than once in the instrument index.",
+      "injector_id": "duplicate_tag"
+    },
+    {
+      "conflict_type": "MISSING_IN_INDEX",
+      "severity": "MEDIUM",
+      "tag": "TIC-111",
+      "field": null,
+      "sources": [
+        "pid",
+        "index"
+      ],
+      "values": {
+        "pid": "TIC-111"
+      },
+      "message": "Instrument TIC-111 is on the P&ID but missing from the index.",
+      "injector_id": "missing_in_index"
+    },
+    {
+      "conflict_type": "MISSING_IN_PID",
+      "severity": "MEDIUM",
+      "tag": "FT-999",
+      "field": null,
+      "sources": [
+        "index",
+        "pid"
+      ],
+      "values": {
+        "index": "FT-999"
+      },
+      "message": "Instrument FT-999 is in the index but not on the P&ID.",
+      "injector_id": "missing_in_pid"
+    },
+    {
+      "conflict_type": "MISSING_DATASHEET",
+      "severity": "MEDIUM",
+      "tag": "LCV-106",
+      "field": null,
+      "sources": [
+        "index",
+        "datasheet"
+      ],
+      "values": {
+        "index": "LCV-106"
+      },
+      "message": "No datasheet found for instrument LCV-106.",
+      "injector_id": "missing_datasheet"
+    },
+    {
+      "conflict_type": "VALUE_MISMATCH",
+      "severity": "HIGH",
+      "tag": "PT-101",
+      "field": "design_pressure",
+      "sources": [
+        "pid",
+        "datasheet"
+      ],
+      "values": {
+        "pid": "50 bar",
+        "datasheet": "40 bar"
+      },
+      "message": "Design pressure for PT-101 differs between P&ID (50 bar) and datasheet (40 bar).",
+      "injector_id": "value_mismatch"
+    },
+    {
+      "conflict_type": "TYPE_MISMATCH",
+      "severity": "MEDIUM",
+      "tag": "FIC-105",
+      "field": "instrument_type",
+      "sources": [
+        "pid",
+        "index"
+      ],
+      "values": {
+        "pid": "Flow Indicating Controller",
+        "index": "Temperature Indicator"
+      },
+      "message": "Instrument type for FIC-105 differs between P&ID (Flow Indicating Controller) and index (Temperature Indicator).",
+      "injector_id": "type_mismatch"
+    }
+  ]
+}

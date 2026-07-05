@@ -1,0 +1,9 @@
+{
+  "tag": "TIC-111",
+  "manufacturer": "Honeywell",
+  "model": "UDC2500",
+  "properties": {
+    "design_pressure": "10 bar",
+    "range": "0-200 C"
+  }
+}
