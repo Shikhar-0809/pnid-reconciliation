@@ -1,14 +1,14 @@
 # P&ID Extraction + Cross-Document Reconciliation
 
-A service that reads an engineering P&ID drawing with a vision-language model, extracts every instrument tag into structured data, then cross-checks that data against the instrument index and datasheets to automatically flag conflicts.
+This repository is a working demonstration built for a P&ID digitization engineering context — to show hands-on capability with the problems that role actually involves: reading instrument data from engineering drawings with a vision-language model, shaping it into validated structured output, and reconciling that output against an instrument index and datasheets.
 
-Industrial plants are described by hundreds of P&IDs plus supporting documents — an instrument index and per-device datasheets. The same instrument appears in all three, and they routinely disagree: a sensor on the drawing is missing from the index, a design pressure on the datasheet contradicts the drawing, a tag deleted in a revision still lingers in the index. This project automates the read and cross-check.
+Industrial plants are described by hundreds of P&IDs plus supporting documents — an instrument index and per-device datasheets. The same instrument appears in all three, and they routinely disagree: a sensor on the drawing is missing from the index, a design pressure on the datasheet contradicts the drawing, a tag deleted in a revision still lingers in the index. That cross-document drift is the operational pain point. This project implements the read-and-check loop end to end, with measured eval results rather than aspirational claims.
 
 **Half A — Extraction.** A VLM reads a P&ID image and returns structured JSON (tag, type, properties) with per-field confidence and review flags.
 
 **Half B — Reconciliation.** The extracted list is matched against an instrument index (CSV) and datasheets (JSON) to produce a severity-ranked conflict report.
 
-Half B runs on data Half A extracted from a real image — not hand-typed JSON. That fusion is the whole point.
+Half B runs on data Half A extracted from a real image — not hand-typed JSON. The pipeline is wired that way deliberately: extraction quality and reconciliation credibility have to be evaluated together.
 
 ## Architecture
 
@@ -73,6 +73,8 @@ Generated from `python -m eval.run_eval` on T0 (`scenario_001`, 5 instruments) a
 | VALUE_MISMATCH | 2 | 0 | 0 | 1.0 | 1.0 |
 
 Full tables: `eval/output/metrics.json` and `eval/output/metrics.md`.
+
+Beyond the synthetic eval, the extraction half was exercised on a batch of real P&ID images — public-domain and textbook examples — via `POST /extract` in extraction-only mode (no instrument index or datasheets were available for matching). On clean CAD-exported P&IDs, the VLM typically returned on the order of 10–20 instruments per drawing. Images that are not P&IDs — motor nameplates, mechanical drawings, electrical schematics — generally returned zero instruments once the extraction prompt precondition was in place.
 
 ## Run instructions
 
